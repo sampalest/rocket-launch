@@ -5,4 +5,3 @@ run:
 .PHONY: build
 build:
 	@docker compose build server
-	
