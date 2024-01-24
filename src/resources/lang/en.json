@@ -1,0 +1,11 @@
+{
+    "health": "Hey! I'm here and I'm OK!",
+    "start_1": "Hi! I'm the Rocket Bot!\nLet's play a game.\nYou must be patient because the API I use is a bit slow, like a snail. 🐌",
+    "start_2": "I'm going to show you images of the Falcon Heavy, and you have to tell me if rocket has launched or not. It's simple.\nSend /play to start or restart the game. 😉",
+    "loading": "Getting image, pleaaaaseeee be pacient... 🐌🐌🐌.",
+    "button_ok": "Has been launched! 🚀",
+    "button_ko": "Not launched yet ⏳",
+    "found": "Congratulations! 🎊\nYou found the launch frame! 👏🏼👏🏼👏🏼",
+    "step_question": "✨Step %s✨\nHas the rocket been launched? 🤔"
+}
+ 

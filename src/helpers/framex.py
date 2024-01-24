@@ -1,10 +1,21 @@
 import requests
 from urllib.parse import quote, urljoin
 
-from core.exceptions import VideoFrameException, MissingVideoException
 from core.settings import FRAMEX_BASE_URL, FRAMEX_REQUEST_TIMEOUT, FRAMEX_VIDEO_NAME
-from model.video import Video
+from models.video import Video
 
+# Exceptions
+
+
+class MissingVideoException(Exception):
+    pass
+
+
+class VideoFrameException(Exception):
+    pass
+
+
+# FrameX Helper
 
 class FrameXHelper:
     def __init__(self, url: str = FRAMEX_BASE_URL):
