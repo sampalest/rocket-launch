@@ -42,5 +42,9 @@ Contribute to the project [click here](docs/CONTRIBUTING.md).
 * python-telegram-bot: https://python-telegram-bot.org/
 * requests: https://requests.readthedocs.io/en/latest/
 
+## For "With Madrid"
+[read](docs/WITH_MADRID.md)
+
+
 ## Author
 Samuel Palomo Esteban

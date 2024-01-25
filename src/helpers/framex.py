@@ -1,5 +1,7 @@
-import requests
 from urllib.parse import quote, urljoin
+
+import requests
+from requests.adapters import HTTPAdapter
 
 from core.settings import FRAMEX_BASE_URL, FRAMEX_REQUEST_TIMEOUT, FRAMEX_VIDEO_NAME
 from models.video import Video
@@ -21,6 +23,7 @@ class FrameXHelper:
     def __init__(self, url: str = FRAMEX_BASE_URL):
         self.base_url = url
         self.session = requests.Session()
+        self.session.mount(self.base_url, HTTPAdapter(max_retries=3))
 
     def get_video(self, video_name: str = FRAMEX_VIDEO_NAME):
         """
